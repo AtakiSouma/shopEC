@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#272727</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E76160</color>
+    <color name="grey">#ababab</color>
+    <color name="chat">#dedede</color>
+    <color name="primary">#00ADB5</color>
+    <color name="gray">#393E46</color>
+    <color name="secondary">#222831</color>
+    <color name="white_gray">#EEEEEE</color>
+    <!-- shimmer-->
+    <color name="shimmer_color">#c2c2c2</color>
+    <color name="light_green">#cefad0</color>
+    <color name="light_red">#ffcbd1</color>
+    <color name="green">#00ab41</color>
+    <color name="red_1">#de0a26</color>
+
+
+</resources>

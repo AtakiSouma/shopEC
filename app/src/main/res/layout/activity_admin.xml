@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AdminActivity"
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="15dp"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:id="@+id/menu_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/avatar_other_user"
+            android:id="@+id/admin_username_of_other"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toRightOf="@id/menu_btn"
+            android:layout_marginStart="18dp"
+
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            android:id="@+id/avatar_other_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/useravatar"
+
+            />
+        <ImageView
+            android:layout_toRightOf="@id/admin_username_of_other"
+            android:layout_marginStart="120dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mesage"
+            android:layout_centerVertical="true"
+            android:id="@+id/gotoMesage"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/list_order_recycleView"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+
+        />
+
+
+</RelativeLayout>

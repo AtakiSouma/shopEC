@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="2dp"
+    app:cardCornerRadius="16dp"
+    android:elevation="8dp"
+    android:layout_marginEnd="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginVertical="4dp"
+            android:paddingHorizontal="8dp"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+               android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Order #555555" />
+
+            <TextView
+                android:textColor="@color/gray"
+                android:id="@+id/order_total_price"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price : 200000 VND" />
+
+            <TextView
+                android:id="@+id/product_time"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="22-10-2002"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/order_delivery_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:text="Delivery on Tes
+" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp">
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/product_images_cart"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view8"
+                app:layout_constraintEnd_toEndOf="@+id/view8"
+                app:layout_constraintStart_toStartOf="@+id/view8"
+                app:layout_constraintTop_toTopOf="@+id/view8"
+                app:srcCompat="@drawable/pic3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
